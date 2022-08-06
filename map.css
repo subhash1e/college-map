@@ -1,7 +1,20 @@
 body{
-	background-image: url(https://media.istockphoto.com/vectors/hilly-lawn-in-the-forest-hills-view-from-above-countryside-rural-vector-id1335008526?k=20&m=1335008526&s=612x612&w=0&h=ql1nXZ8iRdvCkRZGc2t2G0UqBGd7-6A2Vz8J5la_71E=);
 }
-.visible{
+
+
+
+.container::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  	background-image: url(https://media.istockphoto.com/vectors/hilly-lawn-in-the-forest-hills-view-from-above-countryside-rural-vector-id1335008526?k=20&m=1335008526&s=612x612&w=0&h=ql1nXZ8iRdvCkRZGc2t2G0UqBGd7-6A2Vz8J5la_71E=);
+    opacity: .5;
+    content: "";
+    z-index: -1;
+}
+	.visible{
 	visibility: visible;
 }
 .invisible{
@@ -26,24 +39,26 @@ body{
 	background-repeat: no-repeat;
 	border-radius: 10px;
 	margin: 40px;
-	 border: 14px solid lightcyan;
+	 border: 14px solid darkblue;
 	/*z-index: 0;*/
 }
 .place-img{
-	/*z-index: 1;*/
+	z-index: 1;
 	width: 20px;
 }
 .place{
+	z-index: 0;
 	position: absolute;
 	color: black;
 	height: auto;
 	max-height: 40px;
 	font-family: sans-serif;
-	padding: 1px;
 	width: auto;
 	font-style: bold;
 	background: white;
-	opacity: 0.8;
+	opacity: 0.7;
+	border-radius: 5px;
+	padding: 5px;
 }
 #place1{
 	left:  90%;
@@ -85,6 +100,47 @@ body{
 	top: 60%;
 
 }
+#place9{
+	left:  88%;
+	top: 60%;
+
+}
+#place10{
+	left:  50%;
+	top: 81%;
+
+}
+
+#place11{
+	left:  25%;
+	top: 23%;
+
+}
+#place12{
+	left:  64%;
+	top: 30%;
+
+}#place13{
+	left:  53%;
+	top: 27%;
+
+}#place14{
+	left:  33%;
+	top: 37%;
+
+}#place15{
+	left:  30%;
+	top: 75%;
+
+}#place16{
+	left:  57%;
+	top: 39%;
+
+}#place17{
+	left:  72%;
+	top: 51%;
+
+}
 
 .acad{
 	background: grey;
@@ -93,8 +149,16 @@ body{
 	background: palevioletred;
 }
 .unlisted{
-	background: orangered;
+	background: yellow;
 }
 .hostel{
 	background: limegreen;
+}
+#bottomHeader{
+	position: absolute;
+	top :90%;
+	background: wheat;
+	left: 41%;
+	padding-left: 10px;
+	padding-right: 10px;
 }
