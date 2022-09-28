@@ -1,5 +1,5 @@
 # college-map
-College Map with every locations which even google-map doesn't  know are listed here ,made using JQuery, HTML and CSS , 
+College Map with every locations  listed here ,made using JQuery, HTML and CSS , 
 
 
 # visit website
